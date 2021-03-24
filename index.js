@@ -74,3 +74,45 @@ var minus1 = newsletter.substring(1,13);
 var minus2 = newsletter.substring(15);
 var mynewsletter = mayus1.toUpperCase() + minus1.toLowerCase() + " " + mayus2.toUpperCase() + minus2.toLowerCase();
 console.log('2) f) ' + mynewsletter);
+
+// 3) Arrays
+
+/* a) Given the following array: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+display by console months 5 and 11 (use console.log) */
+
+var arr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log('3) a) ' + arr[4],arr[10]);
+
+/* b) Sort the months array alphabetically and display it by console (use sort).*/
+
+var sortarr = arr.sort();
+console.log('3) b) ' + sortarr);
+
+/* c) Add an element to the beginning and end of the array (use unshift and push).*/
+
+arr.unshift("initmonth");
+arr.push ("finalmonth");
+console.log('3) c) ' + arr);
+
+/* d) Remove an element from the beginning and the end of the array (use shift and pop).*/
+
+arr.shift();
+arr.pop ();
+console.log('3) d) ' + arr);
+
+/* e) Reverse the order of the array (use reverse)*/
+
+var reverse = arr.reverse();
+console.log('3) e) ' + reverse);
+
+/* f) Unite all the elements of the array in a single string where each month is separated by a hyphen
+- (use join).*/
+
+var stringarray = arr.join('-');
+console.log('3) f) ' + stringarray);
+
+/* g) Create a copy of the months array containing from May to November (use slice).*/
+
+var arr2 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var copyarr2 = arr2.slice(4,11);
+console.log('3) g) ' + copyarr2);

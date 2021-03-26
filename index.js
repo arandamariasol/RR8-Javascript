@@ -167,3 +167,50 @@ if (Age<2) {
         }
     } 
 }
+
+// 5) For
+
+/* a) Create an array containing 5 words and loop through the array using a for loop of
+JavaScript to display an alert using each of the words. */
+
+var arrnumber = ["one", "two", "three", "four", "five"]
+
+for (var i = 0; i< arrnumber.length; i++) {
+    alert(arrnumber[i]);
+}
+
+/* b) To the above array convert the first letter of each word to uppercase and display a
+alert for every word modified. */
+
+var mayusnum;
+var minusnum;
+
+for (var i = 0; i< arrnumber.length; i++) {
+    mayusnum = arrnumber[i].substring(0,1);
+    minusnum = arrnumber[i].substring (1);
+    alert(mayusnum.toUpperCase() + minusnum);
+}
+
+/* c) Create a variable called "sentence" that has an empty string, then the array from point a)
+go through it with a for loop to save each word inside the sentence variable.
+At the end show a single alert with the complete chain.*/
+
+var sentence = " ";
+
+for (var i = 0; i< arrnumber.length; i++) {
+    sentence= sentence + arrnumber[i];
+}
+alert(sentence);
+
+/* d) Create an empty array and with a for loop of 10 repetitions fill the array with the number
+of the repetition, that is to say that at the end of the execution of the for loop there should be 10 elements
+within the array, from the number 0 to the number 9. Show through the browser console the
+to the final array (use console.log). */
+
+var empty = [];
+empty.length = 10;
+
+for (i=0;i<=9;i++) {
+    empty[i] = i;
+}
+console.log('5) d) ' + empty);

@@ -116,3 +116,54 @@ console.log('3) f) ' + stringarray);
 var arr2 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var copyarr2 = arr2.slice(4,11);
 console.log('3) g) ' + copyarr2);
+
+// 4) If Else
+
+/* a) Create a random number between 0 and 1 using the Math.random () function, if the value is greater than or equal to
+0.5 show an alert with the message "Greater than 0.5" and otherwise an alert with the message "Lower than 0.5" */
+
+var valor = Math.random();
+if (valor>=0.5) {
+    alert("Greater than 0.5")
+} else {
+    alert ("Lower than 0.5")
+}
+
+/* b) Create an "Age" variable that contains an integer between 0 and 100 and displays the following
+alert messages: 
+    "Baby" if the age is less than 2 years
+    "Child" if the age is between 2 and 12 years
+    "Teenager" if the age is between 13 and 19 years
+    "Young" if the age is between 20 and 30 years
+    "Adult" between 31 and 60 years
+    “Older Adult” between 61 and 75 years old
+    "Elderly" if older than 75 years */
+    
+var Age = 17;
+
+if (Age<2) {
+    alert("Baby")
+} else {
+    if (Age<13) {
+        alert("Child")
+    } else {
+        if (Age<20) {
+            alert ("Teenager")
+        } else {
+            if (Age<31) {
+                alert("Young")
+            } else {
+                if (Age<61) {
+                    alert("Adult")
+                } else {
+                    if (Age<76) {
+                        alert("Older Adult")
+                    } else {
+                        alert("Elderly")
+                    }
+
+                }
+            }
+        }
+    } 
+}
